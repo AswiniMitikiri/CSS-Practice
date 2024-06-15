@@ -1,0 +1,138 @@
+* {
+    font-family:'Courier New';
+    /*background-color: wheat;*/
+}
+
+/*h3 {
+    color: purple;
+}*/
+
+/*to apply property to multiple elements,
+ we use the below syntax (by seperating with coma*/
+
+ /*h3 {
+    background-color: antiquewhite !important;
+ }*/
+
+ /* !important is to not to change the value because of any cascading or specificity, the property value will never change*/
+
+h1,h3 {
+    color:#b92b27 ;
+}
+
+/*id selector*/
+#login {
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27 ;
+    color:white;
+}
+
+/*class selector*/
+.upvote {
+    background-color: green;
+    color: aliceblue;
+}
+
+/*descendent selector. can select till any level of the descendent*/
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+/*4 levels of descendant*/
+nav ul li a{
+    color: hotpink;
+}
+
+/* adjacent sibling selector*/
+p + h3 {
+    text-decoration: underline;
+}
+
+.upvote+button {
+    background-color:cornflowerblue ;
+    color: darkblue ;
+}
+
+/*child combinator-can be go only one level i.e., direct child unlike 
+descendent selector. This is one of the disadvantage*/
+
+div > input{
+    background-color:darksalmon ;
+}
+
+/* Attribute selector*/
+input[type="text"] {
+    color: red;
+}
+input[type="password"] {
+    color: green;
+}
+/*changes appear when you type any text in text box*/
+
+input[type] {
+    background-color: ghostwhite;
+}
+/* space should not be given between input and  any attribute
+Search for other syntax in mdn for attribute selector*/
+
+/*Practice Qs*/
+#myId p {
+    color: green;
+}
+/*div[id="myId"] p {
+    color:green;
+}*/
+
+/*Pseudo class*/
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: none;
+}
+
+button:active {
+    background-color: hotpink;
+    /*works when you click the button*/
+    color: black;
+}
+p:active {
+    font-weight: bold;
+    color: green;
+}
+
+/*checked pseudo class works for checkbox and radio button*/
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+
+/*nth-of-type--> to select nth type-use--to change color */
+div:nth-of-type(2n) {
+    /*every 2nd element(2n) background color changes, check or browse in mdn to know more*/
+    background-color:blanchedalmond;
+}
+
+h1::first-letter {
+    color: black;
+}
+
+p::first-line {
+    color: blue;
+}
+
+p::selection {
+    background-color: rgb(190, 205, 50);
+}
+/*selected paragraph (when selected with curser on the webpage) 
+appears with yellow*/
+
+/* Cascading - check with other style sheet in the html file*/
+h3 {
+    background-color: gray;
+}
