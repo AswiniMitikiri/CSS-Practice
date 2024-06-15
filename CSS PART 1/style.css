@@ -1,0 +1,28 @@
+h1{
+    color:blue;
+    background-color:grey;
+}
+
+h2{
+    color:orange;
+}
+
+p{
+    color:white;
+    background-color:black;
+}
+
+button{
+    color:white;
+    background:blue;
+}
+
+ 
+h3{
+    color:rgb(120,0,120);
+}
+
+h4{
+    color:#ff00ff;
+    background:#00ffff;
+}
