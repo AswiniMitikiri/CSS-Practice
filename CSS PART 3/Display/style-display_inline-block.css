@@ -1,0 +1,20 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    /*display: inline; */
+    /* div is a block element and all the divs come to one by one vertically.
+    but when we want to make them come side by side horizontally. we use displa as inline
+    but the height,width, background-color dont apply, margin also applys only on left and right.
+    the divs apply to be straight dark vertical lines like roman 1.
+    To make them apply all the properties{have styling and become inline) , we use inline-block display*/
+    display: inline-block;
+    /* style=block, behave=inline(single line)*/
+}
+
+#third {
+    display: none;
+    /* to remove or invisible the element*/
+}

@@ -1,0 +1,69 @@
+h1 {
+    border: 2px solid black;
+    width: 50%; /*relative to body (parent) element */
+}
+
+#outer {
+    height: 400px;
+    width: 400px;
+    margin: 50px;
+    background-color: pink;
+}
+
+#inner {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    margin-left: 10%; /*10% is with respect to the height and width of the
+    parent div(outer) i.e., 10% * 400px = 40px */
+}
+
+#em-outer {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-color: pink;
+    font-size: 10px;
+}
+
+#em-inner {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    font-size: 3em;
+    /* 3 times the font size of the outer div(parent div). 
+    That means "em" works in relation to the parent element*/
+    padding:1em;
+}
+
+button {
+    font-size: 50px;
+    border-radius:15px;
+    border: 5px solid green;
+    padding-left: 1em;
+    padding-right: 1em; /* this padding is w.r.t font-size as we used relative units(em).*/
+}
+
+hr {
+    border:2px solid black;
+}
+
+/*Snowball-effect */
+
+/* the font size of the div's become relatively double with eachother*/
+section {
+    font-size: 15px;;
+}
+div {
+    font-size:2em;
+}
+
+
+/* to avoid snowball effect, we use rem (relative units)*/
+#section {
+    font-size: 20px;
+}
+
+#div {
+    font-size:2rem;
+}
