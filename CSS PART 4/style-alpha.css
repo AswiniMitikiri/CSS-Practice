@@ -1,0 +1,21 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: #3cff00ff;
+    transition-duration:1s ;
+    transition-delay: 1s;
+}
+
+#opacity {
+    background-color: #ffa511 ;
+    opacity: 0.5 ;
+    /* all the elements along with the text with become invisible 
+    when opacity is set to "0" but this will not happen in case of alpha*/
+}
+
+div:hover {
+    background-color: black;
+    border-radius: 50%;
+}
+
+
